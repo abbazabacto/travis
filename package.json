@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "travis",
   "main": "index.js",
+  "engines": {
+    "mode": ">=0.10"
+  },
   "scripts": {
-    "test": "grunt travis"
+    "test": "grunt travis --verbose"
   },
   "repository": {
     "type": "git",
