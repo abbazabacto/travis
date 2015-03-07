@@ -1,0 +1,24 @@
+{
+  "name": "travis",
+  "version": "1.0.0",
+  "description": "travis",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt travis"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abbazabacto/travis.git"
+  },
+  "author": "Bart Meinders",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abbazabacto/travis/issues"
+  },
+  "homepage": "https://github.com/abbazabacto/travis",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.0",
+    "load-grunt-tasks": "~0.2.0"
+  }
+}
