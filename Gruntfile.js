@@ -3,8 +3,25 @@
 module.exports = function(grunt){
 	// Load grunt tasks automatically
 	require('load-grunt-tasks')(grunt);
-
+	
 	grunt.initConfig({
+		pkg: grunt.file.readJSON('package.json'),
+ 		
+		karma: {
+            unit: {
+                configFile: 'karma.conf.js'
+            }
+        },
+
+        jasmine: {
+            unit: {
+				src: ['**/*.js'],
+				options: {
+					spec: '**/*.tests.js'
+				}
+            }
+        },
+
 		jshint: {
 		    options: {
 		      curly: true,
@@ -28,5 +45,5 @@ module.exports = function(grunt){
 	    }
 	});
 
-	grunt.registerTask('travis', 'jshint');
+	grunt.registerTask('test', ['jshint', 'karma']);
 };
