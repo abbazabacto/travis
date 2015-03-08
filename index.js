@@ -1,1 +1,1 @@
-var test = "valid jshint code here";
+var test = in"valid jshint code here";
